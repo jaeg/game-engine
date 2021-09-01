@@ -14,8 +14,6 @@ github.com/alecthomas/units v0.0.0-20151022065526-2efee857e7cf/go.mod h1:ybxpYRF
 github.com/alecthomas/units v0.0.0-20190717042225-c3de453c63f4/go.mod h1:ybxpYRFXyAe+OPACYpWeL0wqObRcbAqCMya13uyzqw0=
 github.com/apache/thrift v0.12.0/go.mod h1:cp2SuWMxlEZw2r+iP2GNCdIi4C1qmUzdZFSVb+bacwQ=
 github.com/apache/thrift v0.13.0/go.mod h1:cp2SuWMxlEZw2r+iP2GNCdIi4C1qmUzdZFSVb+bacwQ=
-github.com/aquilax/go-perlin v1.1.0 h1:Gg+3jQ24wT4Y5GI7TCRLmYarzUG0k+n/JATFqOimb7s=
-github.com/aquilax/go-perlin v1.1.0/go.mod h1:z9Rl7EM4BZY0Ikp2fEN1I5mKSOJ26HQpk0O2TBdN2HE=
 github.com/armon/circbuf v0.0.0-20150827004946-bbbad097214e/go.mod h1:3U/XgcO3hCbHZ8TKRvWD2dDTCfh9M9ya+I9JpbB7O8o=
 github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da/go.mod h1:Q73ZrmVTwzkszR9V5SSuryQ31EELlFMUz1kKyl939pY=
 github.com/armon/go-radix v0.0.0-20180808171621-7fddfc383310/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
@@ -23,8 +21,6 @@ github.com/aryann/difflib v0.0.0-20170710044230-e206f873d14a/go.mod h1:DAHtR1m6l
 github.com/aws/aws-lambda-go v1.13.3/go.mod h1:4UKl9IzQMoD+QF79YdCuzCwp8VbmG4VAQwij/eHl5CU=
 github.com/aws/aws-sdk-go v1.27.0/go.mod h1:KmX6BPdI08NWTb3/sm4ZGu5ShLoqVDhKgpiN924inxo=
 github.com/aws/aws-sdk-go-v2 v0.18.0/go.mod h1:JWVYvqSMppoMJC0x5wdwiImzgXTI9FuZwxzkQq9wy+g=
-github.com/beefsack/go-astar v0.0.0-20200827232313-4ecf9e304482 h1:p4g4uok3+r6Tg6fxXEQUAcMAX/WdK6WhkQW9s0jaT7k=
-github.com/beefsack/go-astar v0.0.0-20200827232313-4ecf9e304482/go.mod h1:Cu3t5VeqE8kXjUBeNXWQprfuaP5UCIc5ggGjgMx9KFc=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+CedLV8=
 github.com/beorn7/perks v1.0.1/go.mod h1:G2ZrVWU2WbWT9wwq4/hrbKbnv/1ERSJQ0ibhJ6rlkpw=
@@ -63,7 +59,6 @@ github.com/go-fonts/liberation v0.2.0 h1:jAkAWJP4S+OsrPLZM4/eC9iW7CtHy+HBXrEwZXW
 github.com/go-fonts/liberation v0.2.0/go.mod h1:K6qoJYypsmfVjWg8KOVDQhLc8UDgIK2HYqyqAO9z7GY=
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20200222043503-6f7a984d4dc4/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20200707082815-5321531c36a2/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
-github.com/go-gl/glfw/v3.3/glfw v0.0.0-20210410170116-ea3d685f79fb/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20210727001814-0db043d8d5be h1:vEIVIuBApEBQTEJt19GfhoU+zFSV+sNTa9E9FdnRYfk=
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20210727001814-0db043d8d5be/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
 github.com/go-kit/kit v0.8.0/go.mod h1:xBxKIO96dXMWWy0MnWVtmwkA9/13aqxPnvrjFYMA2as=
@@ -113,7 +108,6 @@ github.com/hajimehoshi/bitmapfont/v2 v2.1.3 h1:JefUkL0M4nrdVwVq7MMZxSTh6mSxOylm+
 github.com/hajimehoshi/bitmapfont/v2 v2.1.3/go.mod h1:2BnYrkTQGThpr/CY6LorYtt/zEPNzvE/ND69CRTaHMs=
 github.com/hajimehoshi/ebiten v1.12.12 h1:JvmF1bXRa+t+/CcLWxrJCRsdjs2GyBYBSiFAfIqDFlI=
 github.com/hajimehoshi/ebiten v1.12.12/go.mod h1:1XI25ImVCDPJiXox4h9yK/CvN5sjDYnbF4oZcFzPXHw=
-github.com/hajimehoshi/ebiten/v2 v2.1.4/go.mod h1:mpAvpmTRbMdhQDZplZ4rfEogRhdsfAGTC0zLhxawKHY=
 github.com/hajimehoshi/ebiten/v2 v2.1.5 h1:yx8g5YQy7xnVbT4lCZCAQHx454j50emlRs6Aa78vdPc=
 github.com/hajimehoshi/ebiten/v2 v2.1.5/go.mod h1:jySpxHAruK+OxqSiU5+ga2OGvlQCIRNlKhDZTIyn9po=
 github.com/hajimehoshi/file2byteslice v0.0.0-20200812174855-0e5e8a80490e/go.mod h1:CqqAHp7Dk/AqQiwuhV1yT2334qbA/tFWQW0MD2dGqUE=
@@ -148,8 +142,6 @@ github.com/hpcloud/tail v1.0.0/go.mod h1:ab1qPbhIpdTxEkNHXyeSf5vhxWSCs/tWer42PpO
 github.com/hudl/fargo v1.3.0/go.mod h1:y3CKSmjA+wD2gak7sUSXTAoopbhU08POFhmITJgmKTg=
 github.com/inconshreveable/mousetrap v1.0.0/go.mod h1:PxqpIevigyE2G7u3NXJIT2ANytuPF1OarO4DADm73n8=
 github.com/influxdata/influxdb1-client v0.0.0-20191209144304-8bf82d3c094d/go.mod h1:qj24IKcXYK6Iy9ceXlo3Tc+vtHo9lIhSX5JddghvEPo=
-github.com/jaeg/cool_game v0.0.0-20210831022632-10ac4fce7ea5 h1:ydjULi9g/nvp524MkEUhtLgCSl7e7WkodP6BCYe/Ir4=
-github.com/jaeg/cool_game v0.0.0-20210831022632-10ac4fce7ea5/go.mod h1:gg/Vynoi7SjMeLtx+eA6NlyTGuz9+SubrgcvgqgjzPo=
 github.com/jakecoffman/cp v1.0.0/go.mod h1:JjY/Fp6d8E1CHnu74gWNnU0+b9VzEdUVPoJxg2PsTQg=
 github.com/jakecoffman/cp v1.1.0/go.mod h1:JjY/Fp6d8E1CHnu74gWNnU0+b9VzEdUVPoJxg2PsTQg=
 github.com/jfreymuth/oggvorbis v1.0.1/go.mod h1:NqS+K+UXKje0FUYUPosyQ+XTVvjmVjps1aEZH1sumIk=
