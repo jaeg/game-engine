@@ -1,11 +1,10 @@
 package system
 
 import (
-	"github.com/jaeg/cool_game/entity"
-	"github.com/jaeg/cool_game/world"
+	"github.com/jaeg/game-engine/entity"
 )
 
 // System base system interface
-type System interface {
-	Update(*world.Level, *entity.Entity)
+type SystemInterface interface {
+	Update(world interface{}, entity *entity.Entity) error
 }
