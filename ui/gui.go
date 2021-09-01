@@ -4,9 +4,9 @@ import (
 	"image"
 
 	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/jaeg/cool_game/config"
-	"github.com/jaeg/cool_game/resource"
-	"github.com/jaeg/cool_game/state"
+	"github.com/jaeg/game-engine/config"
+	"github.com/jaeg/game-engine/resource"
+	"github.com/jaeg/game-engine/state"
 )
 
 //GUI Main struct that manages the gui for the game. Includes the cursor

@@ -6,8 +6,8 @@ import (
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/text"
-	"github.com/jaeg/cool_game/config"
-	"github.com/jaeg/cool_game/resource"
+	"github.com/jaeg/game-engine/config"
+	"github.com/jaeg/game-engine/resource"
 )
 
 type Button struct {

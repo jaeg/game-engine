@@ -2,7 +2,7 @@ package ui
 
 import (
 	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/jaeg/cool_game/state"
+	"github.com/jaeg/game-engine/state"
 )
 
 //Base GUIView interface.
