@@ -9,13 +9,15 @@ import (
 	"github.com/go-fonts/liberation/liberationsansregular"
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
-	"github.com/jaeg/cool_game/config"
+	"github.com/jaeg/game-engine/audio"
+	"github.com/jaeg/game-engine/config"
 	"golang.org/x/image/font"
 	"golang.org/x/image/font/opentype"
 )
 
 var Textures map[string]*ebiten.Image
 var Fonts map[string]font.Face
+var Sounds map[string]audio.AudioResource
 
 func LoadImageAsTexture(name string, path string) error {
 	if Textures == nil {
