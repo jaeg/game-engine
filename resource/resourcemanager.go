@@ -19,6 +19,7 @@ var Textures map[string]*ebiten.Image
 var Fonts map[string]font.Face
 var Sounds map[string]audio.AudioResource
 
+// LoadImageAsTexture - Loads an image in the texture map with the given name and path.
 func LoadImageAsTexture(name string, path string) error {
 	if Textures == nil {
 		log.Print("Initialize resource manager")
@@ -33,6 +34,7 @@ func LoadImageAsTexture(name string, path string) error {
 	return nil
 }
 
+// LoadImage - Loads an image from the specified path and returns it as an ebiten.Image
 func LoadImage(path string) (*ebiten.Image, error) {
 	imgFile, err := ebitenutil.OpenFile(path)
 	if err != nil {
@@ -48,6 +50,7 @@ func LoadImage(path string) (*ebiten.Image, error) {
 	return ebiten.NewImageFromImage(img), nil
 }
 
+// LoadFont - Loads a font into the font map with the given name and path.
 func LoadFont(name string, path string) error {
 	if Fonts == nil {
 		log.Print("Initialize resource manager")

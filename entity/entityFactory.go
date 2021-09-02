@@ -3,6 +3,7 @@ package entity
 import (
 	"bufio"
 	"errors"
+	"io"
 	"os"
 	"strings"
 
@@ -14,16 +15,21 @@ type ComponentAddFunction func(params []string) (component.Component, error)
 var blueprints = make(map[string][]string)
 var componentAddFunctions = make(map[string]ComponentAddFunction)
 
-// FactoryLoad Loads the blueprints for the factory to construct entities
-func FactoryLoad(filename string) {
+// FactoryLoad - Loads the blueprints for the factory to construct entities
+func FactoryLoad(filename string) error {
 	file, err := os.Open(filename)
 	if err != nil {
-		return
+		return err
 	}
 
 	defer file.Close()
 
-	scanner := bufio.NewScanner(file)
+	return LoadFactoryFromStream(file)
+}
+
+// LoadFactorFromStream - Loads the blueprints from an io stream.
+func LoadFactoryFromStream(r io.Reader) error {
+	scanner := bufio.NewScanner(r)
 
 	scanner.Split(bufio.ScanLines)
 
@@ -41,12 +47,17 @@ func FactoryLoad(filename string) {
 			blueprints[entityName] = append(blueprints[entityName], value)
 		}
 	}
+
+	return nil
 }
 
+// RegisterComponentAddFunction - Register a function pointer to point be used whenever the factory goes to build
+// an entity from a blueprint using this component.
 func RegisterComponentAddFunction(name string, function ComponentAddFunction) {
 	componentAddFunctions[name] = function
 }
 
+// Create - Creates an entity from the named blueprint.
 func Create(name string) (*Entity, error) {
 	blueprint := blueprints[name]
 	if blueprint != nil {
