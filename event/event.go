@@ -80,3 +80,32 @@ func (m *EventManager) UnregisterListenerFromAll(listener EventListener) {
 	}
 
 }
+
+type QueuedEventManager struct {
+	EventManager
+	eventQueue []EventData
+}
+
+// QueueEvent - Queues an event to be sent to listeners during the manger's handle call.
+func (m *QueuedEventManager) QueueEvent(event EventData) {
+	if m.eventQueue == nil {
+		m.eventQueue = make([]EventData, 0)
+	}
+	m.eventQueue = append(m.eventQueue, event)
+}
+
+// HandleQueue - Sends all the current events in the queue, but doesn't send new events
+func (m *QueuedEventManager) HandleQueue() {
+	if m.eventQueue == nil {
+		m.eventQueue = make([]EventData, 0)
+		return
+	}
+
+	//We don't want to handle new events generated while handling these events or we'll get an endless loop.
+	c := len(m.eventQueue)
+	for len(m.eventQueue) > 0 && c > 0 {
+		m.SendEvent(m.eventQueue[0])
+		m.eventQueue = m.eventQueue[1:]
+		c--
+	}
+}

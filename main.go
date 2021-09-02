@@ -10,6 +10,8 @@ const (
 	Test event.EventType = iota
 )
 
+var m *event.QueuedEventManager
+
 type TestEventData struct {
 	x int
 	y int
@@ -23,12 +25,13 @@ type TestListener struct {
 }
 
 func (t *TestListener) HandleEvent(data event.EventData) error {
-	fmt.Println(data)
+	fmt.Println("Handling event: ", data)
+	m.QueueEvent(data)
 	return nil
 }
 
 func main() {
-	m := &event.EventManager{}
+	m = &event.QueuedEventManager{}
 
 	testListener := &TestListener{}
 
@@ -38,8 +41,9 @@ func main() {
 
 	//Test event send
 	testEventData := TestEventData{x: 5, y: 6}
-	m.SendEvent(testEventData)
-
+	m.QueueEvent(testEventData)
+	m.HandleQueue()
+	m.HandleQueue()
 	//m.UnregisterListener(testListener, Test)
 	m.UnregisterListenerFromAll(testListener)
 }

@@ -15,8 +15,8 @@ type ComponentAddFunction func(params []string) (component.Component, error)
 var blueprints = make(map[string][]string)
 var componentAddFunctions = make(map[string]ComponentAddFunction)
 
-// FactoryLoad - Loads the blueprints for the factory to construct entities
-func FactoryLoad(filename string) error {
+// LoadBlueprintsFromFile - Loads the blueprints for the factory to construct entities
+func LoadBlueprintsFromFile(filename string) error {
 	file, err := os.Open(filename)
 	if err != nil {
 		return err
